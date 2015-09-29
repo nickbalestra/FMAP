@@ -28,11 +28,11 @@ button => {
 
 
 // Exercise 30: Completing Sequences with take()
+// Use take() to listen for only one button click
+// and unsubscribe.
 button => {
   var buttonClicks = Observable.fromEvent(button, "click");
 
-  // Use take() to listen for only one button click
-  // and unsubscribe.
   buttonClicks.
     take().
     forEach(clickEvent =>
